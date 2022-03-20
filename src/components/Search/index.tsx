@@ -36,8 +36,8 @@ const Search: FC<SearchProps> = ({ placeholder }) => {
 				placeholder={placeholder}
 			/>
 
-			<button type="button" onClick={handleGetItemSearch}>
-				<Image width="20px" height="20px" src="/assets/images/search.png" />
+			<button aria-label="search" type="button" onClick={handleGetItemSearch}>
+				<Image width="20px" height="20px" src="/assets/images/search.png" alt='icon search' />
 			</button>
 		</div>
 	)
