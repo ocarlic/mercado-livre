@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap"
             rel="stylesheet"
           />
+          <meta name="description" content="Practical test for applicants to the front-end area of Mercado Livre" />
           <title>Mercado Livre</title>
         </Head>
 
