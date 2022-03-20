@@ -4,4 +4,9 @@
   display: inline-block;
   font-size: var(--font-size-12);
   padding: var(--spacing-medium) 0;
+
+  @media screen and (max-width: 720px) {
+    padding: var(--spacing-medium) var(--spacing-small);
+    width: 100%;
+  }
 }

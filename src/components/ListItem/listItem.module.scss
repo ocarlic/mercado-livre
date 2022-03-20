@@ -28,6 +28,15 @@
 					-ms-border-radius: var(--border-radius-4);
 					-o-border-radius: var(--border-radius-4);
 				}
+
+        @media screen and (max-width: 720px) {
+          flex-direction: column;
+          width: 100%;
+
+          > img {
+            margin: 0 auto;
+          }
+        }
 			}
 		}
 	}
