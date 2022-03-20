@@ -1,7 +1,10 @@
 {
-  "name": "mercado-libre",
+  "name": "mercado-livre",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
