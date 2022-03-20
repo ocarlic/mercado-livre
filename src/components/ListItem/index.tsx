@@ -1,5 +1,5 @@
 import ItemDescription from './components/ItemDescription'
-import { ProductList } from '../../pages/items/type'
+import { ProductList } from '../../types/items'
 
 import styles from './listItem.module.scss'
 import ItemAddress from './components/ItemAddress'

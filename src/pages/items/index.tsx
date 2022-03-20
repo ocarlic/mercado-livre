@@ -1,5 +1,5 @@
 import { GetServerSideProps } from 'next'
-import { ProductList, Products } from './type'
+import { ProductList, Products } from '../../types/items'
 import { api } from '../../services/api'
 import { GET_SEARCH_ITEMS } from '../../utils/endpoints'
 

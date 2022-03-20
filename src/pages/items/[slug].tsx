@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next'
 import { api } from '../../services/api'
 import { GET_ITEM_ID, GET_ITEM_ID_DESCRIPTION } from '../../utils/endpoints'
-import { Item } from './type'
+import { Item } from '../../types/items'
 
 import Wrapper from '../../components/Wrapper'
 import ProductInfo from '../../components/ProductInfo'
