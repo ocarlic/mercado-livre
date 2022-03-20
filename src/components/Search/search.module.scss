@@ -1,0 +1,40 @@
+.search {
+  width: 100%;
+  display: flex;
+  margin-left: 2rem;
+
+  input {
+    width: 100%;
+    border: none;
+    padding-left: var(--spacing-small);
+
+    &::placeholder {
+      font-size: var(--font-size-18);
+      color: var(--grey-200);
+    }
+
+    border-radius: var(--border-radius-3) 0 0 var(--border-radius-3);
+    -webkit-border-radius: var(--border-radius-3) 0 0 var(--border-radius-3);
+    -moz-border-radius: var(--border-radius-3) 0 0 var(--border-radius-3);
+    -ms-border-radius: var(--border-radius-3) 0 0 var(--border-radius-3);
+    -o-border-radius: var(--border-radius-3) 0 0 var(--border-radius-3);
+    -webkit-border-radius: var(--border-radius-3) 0 0 var(--border-radius-3);
+}
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--grey-100);
+    border: none;
+    width: 60px;
+    height: 100%;
+
+    border-radius: 0 var(--border-radius-3) var(--border-radius-3) 0;
+    -webkit-border-radius: 0 var(--border-radius-3) var(--border-radius-3) 0;
+    -moz-border-radius: 0 var(--border-radius-3) var(--border-radius-3) 0;
+    -ms-border-radius: 0 var(--border-radius-3) var(--border-radius-3) 0;
+    -o-border-radius: 0 var(--border-radius-3) var(--border-radius-3) 0;
+  }
+}

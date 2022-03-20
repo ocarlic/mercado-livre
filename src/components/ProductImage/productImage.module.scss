@@ -1,0 +1,7 @@
+.container__image {
+  width: 65%;
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
+}

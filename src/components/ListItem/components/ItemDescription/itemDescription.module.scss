@@ -1,0 +1,33 @@
+.item__description {
+  width: 60%;
+  padding-left: var(--spacing-small);
+
+  span {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: var(--font-size-24);
+      padding: var(--spacing-medium) 0;
+      font-weight: 400;
+    }
+
+    > img {
+      width: 25px;
+      height: 25px;
+      margin-left: var(--spacing-small);
+    }
+
+    @media screen and (max-width: 720px) {
+      display: inline-block;
+
+      > img {
+        margin: 0 0 var(--spacing-small) 0;
+      }
+    }
+  }
+
+  p {
+    font-size: var(--font-size-18);
+  }
+}

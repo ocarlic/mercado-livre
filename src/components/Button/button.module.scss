@@ -1,0 +1,18 @@
+.button {
+  padding: var(--spacing-small);
+  background: var(--blue-100);
+  color: var(--white);
+  border: none;
+  width: 100%;
+
+  &:hover {
+    filter: brightness(0.8)  ;
+    -webkit-filter: brightness(0.8);
+  }
+
+  border-radius: var(--border-radius-3);
+  -webkit-border-radius: var(--border-radius-3);
+  -moz-border-radius: var(--border-radius-3);
+  -ms-border-radius: var(--border-radius-3);
+  -o-border-radius: var(--border-radius-3);
+}

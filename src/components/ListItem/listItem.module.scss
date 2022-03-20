@@ -1,0 +1,34 @@
+.list {
+	width: 100%;
+
+	ol {
+		counter-reset: item;
+		list-style-type: none;
+
+		li {
+			a {
+				width: 100%;
+				display: flex;
+
+				width: 100%;
+				padding: var(--spacing-small) 0;
+				border-bottom: 1px solid var(--grey-100);
+
+				&:last-child {
+					border: none;
+				}
+
+				> img {
+					width: 20%;
+					min-width: 180px;
+					min-height: 180px;
+					border-radius: var(--border-radius-4);
+					-webkit-border-radius: var(--border-radius-4);
+					-moz-border-radius: var(--border-radius-4);
+					-ms-border-radius: var(--border-radius-4);
+					-o-border-radius: var(--border-radius-4);
+				}
+			}
+		}
+	}
+}

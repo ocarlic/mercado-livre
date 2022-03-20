@@ -1,0 +1,23 @@
+.container__description {
+	width: 100%;
+
+	h3 {
+		font-size: var(--font-size-28);
+		margin-top: var(--spacing-small);
+		font-weight: 400;
+	}
+
+	p {
+		margin: var(--spacing-medium) 0;
+		font-size: var(--font-size-16);
+		color: var(--grey-200);
+		font-weight: 200;
+		width: 65%;
+	}
+
+	@media screen and (max-width: 720px) {
+		p {
+			width: 100%;
+		}
+	}
+}

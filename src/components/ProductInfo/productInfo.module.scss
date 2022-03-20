@@ -1,0 +1,28 @@
+.container__info {
+  width: 33%;
+
+  span {
+    font-size: var(--font-size-14);
+    font-weight: 100;
+
+    @media screen and (max-width: 720px) {
+      display: inline-block;
+      margin-top: var(--spacing-medium);
+    }
+  }
+
+  h2 {
+    font-size: var(--font-size-24);
+    margin-top: var(--spacing-small);
+  }
+
+  p {
+    margin: var(--spacing-medium) 0;
+    font-size: var(--font-size-46);
+    font-weight: 200;
+  }
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
+}
