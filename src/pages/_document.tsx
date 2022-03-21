@@ -13,7 +13,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta name="description" content="Practical test for applicants to the front-end area of Mercado Livre" />
-          <title>Mercado Livre</title>
         </Head>
 
         <body>
