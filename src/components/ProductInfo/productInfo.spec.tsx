@@ -3,9 +3,9 @@ import ProductInfo from '.'
 
 describe('Component: ProductInfo', () => {
 	it('Should render product info', () => {
-		const { getByText } = render(<ProductInfo price={3000} title="any-title" sold_quantity={300} />)
+		const { getByText, getByTestId } = render(<ProductInfo price={3000} title="any-title" sold_quantity={300} />)
 
-		const price = getByText('R$ 3,000.00')
+		const price = getByTestId('data-price')
 		const title = getByText(/any-title/i)
 		const sold_quantity = getByText('300 vendidos')
 

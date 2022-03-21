@@ -13,7 +13,7 @@ export default function ProductInfo({ title, sold_quantity, price }: ProductInfo
 		<div className={styles.container__info}>
 			<span>{`${sold_quantity} vendidos`}</span>
 			<h2>{title}</h2>
-			<p>{formatValueMoney(price)}</p>
+			<p data-testid='data-price'>{formatValueMoney(price)}</p>
 
 			<Button onClick={() => {}}>Comprar</Button>
 		</div>
