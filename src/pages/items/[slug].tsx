@@ -41,29 +41,31 @@ export const getStaticPaths = () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  try {
-    const responseId = await api.get(`${GET_ITEM_ID}/${params?.slug}`)
-    const responseDescription = await api.get(
-      `${GET_ITEM_ID}/${params?.slug}/${GET_ITEM_ID_DESCRIPTION}`
-    )
+  const allPromise = Promise.all([
+    api.get(`${GET_ITEM_ID}/${params?.slug}`),
+    api.get(`${GET_ITEM_ID}/${params?.slug}/${GET_ITEM_ID_DESCRIPTION}`)
+  ])
 
-    if (!responseId.data || responseId.data.error ) {
+  try {
+    const [item, description] = await allPromise
+
+    if (!item.data || item.data.error ) {
       return { notFound: true };
     }
 
     const product = {
-      id: responseId.data.id,
-      title: responseId.data.title,
-      price: responseId.data.price,
+      id: item.data.id,
+      title: item.data.title,
+      price: item.data.price,
       pictures: {
-        secure_url: responseId.data.pictures[0].secure_url
+        secure_url: item.data.pictures[0].secure_url
       },
-      sold_quantity: responseId.data.sold_quantity,
-      description: responseDescription.data.plain_text,
+      sold_quantity: item.data.sold_quantity,
+      description: description.data.plain_text,
     }
 
     return { props: { product } };
-  } catch (err) {
+  } catch(err) {
     return { notFound: true };
   }
 }
