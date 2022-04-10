@@ -10,8 +10,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watchAll",
-    "coverage": "jest --coverage --watchAll"
+    "test": "jest",
+    "coverage": "jest --coverage --watchAll",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "axios": "^0.26.1",
