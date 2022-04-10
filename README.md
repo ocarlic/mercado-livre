@@ -1,5 +1,11 @@
 <h1 align="center">Challenge Front End - Mercado Livre</h1>
 
+<div align="center">
+  <a href='https://coveralls.io/github/ocarlic/mercado-livre?branch=feature/pipeline'>
+    <img src='https://coveralls.io/repos/github/ocarlic/mercado-livre/badge.svg?branch=feature/pipeline' alt='Coverage Status' />
+  </a>
+</div>
+
 ## 💻 About the project
 
 Practical test for applicants to the front-end area of Mercado Livre.
